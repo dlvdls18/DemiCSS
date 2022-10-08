@@ -1,0 +1,342 @@
+/*
+ * Version 1.0
+ * https://github.com/dlvdls18/Demi-CSS
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+:root {
+  --demi-primary: #028DD1;
+  --demi-secondary: #1F1F1F;
+  --demi-forest: #377939;
+  --demi-crimson: #8F312E;
+  --demi-gold: #A69B25;
+  --demi-hollow: #6E6E6E;
+  --demi-light: #D2D2D2;
+}
+
+.demi-btn {
+  padding: 10px;
+  padding-left: 25px;
+  padding-right: 25px;
+  background-color: transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  border: 1px solid transparent;
+  margin: 5px;
+  transition: background-color 0.2s ease-out, color 0.2s ease-out;
+}
+
+.demi-btn-primary {
+  border-color: var(--demi-primary);
+  color: var(--demi-primary);
+}
+
+.demi-btn-primary:hover {
+  background-color: var(--demi-primary);
+  color: white;
+}
+
+.demi-btn-secondary {
+  border-color: var(--demi-secondary);
+  color: var(--demi-secondary);
+}
+
+.demi-btn-secondary:hover {
+  background-color: var(--demi-secondary);
+}
+
+.demi-btn-forest {
+  border-color: var(--demi-forest);
+  color: var(--demi-forest);
+}
+
+.demi-btn-forest:hover {
+  background-color: var(--demi-forest);
+}
+
+.demi-btn-crimson {
+  border-color: var(--demi-crimson);
+  color: var(--demi-crimson);
+}
+
+.demi-btn-crimson:hover {
+  background-color: var(--demi-crimson);
+}
+
+.demi-btn-gold {
+  border-color: var(--demi-gold);
+  color: var(--demi-gold);
+}
+
+.demi-btn-gold:hover {
+  background-color: var(--demi-gold);
+}
+
+.demi-btn-hollow {
+  border-color: var(--demi-hollow);
+  color: var(--demi-hollow);
+}
+
+.demi-btn-hollow:hover {
+  background-color: var(--demi-hollow);
+}
+
+.demi-btn-light {
+  border-color: var(--demi-light);
+  color: #515151;
+}
+
+.demi-btn-light:hover {
+  background-color: var(--demi-light);
+}
+
+.demi-btn-primary:hover,
+.demi-btn-secondary:hover,
+.demi-btn-forest:hover,
+.demi-btn-crimson:hover,
+.demi-btn-gold:hover,
+.demi-btn-hollow:hover {
+  color: white;
+}
+
+.demi-input {
+  outline: none;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: text;
+  font-size: 1rem;
+  margin: 5px;
+  border-radius: 0;
+  border: 0;
+}
+
+.demi-input-primary {
+  background-color: var(--demi-primary);
+}
+
+.demi-input-secondary {
+  background-color: var(--demi-secondary);
+}
+
+.demi-input-forest {
+  background-color: var(--demi-forest);
+}
+
+.demi-input-crimson {
+  background-color: var(--demi-crimson);
+}
+
+.demi-input-gold {
+  background-color: var(--demi-gold);
+}
+
+.demi-input-hollow {
+  background-color: var(--demi-hollow);
+}
+
+.demi-input-light {
+  background-color: var(--demi-light);
+  color: #515151;
+}
+
+.demi-input-primary,
+.demi-input-secondary,
+.demi-input-forest,
+.demi-input-crimson,
+.demi-input-gold,
+.demi-input-hollow {
+  color: white;
+}
+
+.demi-input-primary::placeholder,
+.demi-input-secondary::placeholder,
+.demi-input-forest::placeholder,
+.demi-input-crimson::placeholder,
+.demi-input-gold::placeholder,
+.demi-input-hollow::placeholder {
+  color: rgba(255,255,255,0.8);
+}
+
+.demi-slider {
+  -webkit-appearance: none;
+  margin: 5px;
+}
+
+.demi-slider::-webkit-slider-runnable-track {
+  -webkit-appearance: none;
+  height: 1px;
+  margin: 10px;
+}
+
+.demi-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: white;
+  width: 17px;
+  height: 17px;
+  translate: 0 -8px;
+  border-radius: 50%;
+}
+
+.demi-slider-primary {
+  accent-color: var(--demi-primary);
+}
+
+.demi-slider-primary::-webkit-slider-runnable-track {
+  background-color: var(--demi-primary);
+}
+
+.demi-slider-primary::-webkit-slider-thumb {
+  border: 1px solid var(--demi-primary);
+}
+
+.demi-slider-secondary {
+  accent-color: var(--demi-secondary);
+}
+
+.demi-slider-secondary::-webkit-slider-runnable-track {
+  background-color: var(--demi-secondary);
+}
+
+.demi-slider-secondary::-webkit-slider-thumb {
+  border: 1px solid var(--demi-secondary);
+}
+
+.demi-slider-forest {
+  accent-color: var(--demi-forest);
+}
+
+.demi-slider-forest::-webkit-slider-runnable-track {
+  background-color: var(--demi-forest);
+}
+
+.demi-slider-forest::-webkit-slider-thumb {
+  border: 1px solid var(--demi-forest);
+}
+
+.demi-slider-crimson {
+  accent-color: var(--demi-crimson);
+}
+
+.demi-slider-crimson::-webkit-slider-runnable-track {
+  background-color: var(--demi-crimson);
+}
+
+.demi-slider-crimson::-webkit-slider-thumb {
+  border: 1px solid var(--demi-crimson);
+}
+
+.demi-slider-gold {
+  accent-color: var(--demi-gold);
+}
+
+.demi-slider-gold::-webkit-slider-runnable-track {
+  background-color: var(--demi-gold);
+}
+
+.demi-slider-gold::-webkit-slider-thumb {
+  border: 1px solid var(--demi-gold);
+}
+
+.demi-slider-hollow {
+  accent-color: var(--demi-hollow);
+}
+
+.demi-slider-hollow::-webkit-slider-runnable-track {
+  background-color: var(--demi-hollow);
+}
+
+.demi-slider-hollow::-webkit-slider-thumb {
+  border: 1px solid var(--demi-hollow);
+}
+
+.demi-slider-light {
+  accent-color: var(--demi-light);
+}
+
+.demi-slider-light::-webkit-slider-runnable-track {
+  background-color: var(--demi-light);
+}
+
+.demi-slider-light::-webkit-slider-thumb {
+  border: 1px solid var(--demi-light);
+}
+
+.demi-badge,
+.demi-badge-pill {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 5px;
+  font-size: 0.8rem;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.demi-badge-pill {
+  border-radius: 20px;
+}
+
+.demi-badge-primary {
+  background-color: var(--demi-primary);
+}
+
+.demi-badge-secondary {
+  background-color: var(--demi-secondary);
+}
+
+.demi-badge-forest {
+  background-color: var(--demi-forest);
+}
+
+.demi-badge-crimson {
+  background-color: var(--demi-crimson);
+}
+
+.demi-badge-gold {
+  background-color: var(--demi-gold);
+}
+
+.demi-badge-hollow {
+  background-color: var(--demi-hollow);
+}
+
+.demi-badge-light {
+  background-color: var(--demi-light);
+}
+
+.demi-badge-primary,
+.demi-badge-secondary,
+.demi-badge-forest,
+.demi-badge-crimson,
+.demi-badge-gold,
+.demi-badge-hollow {
+  color: white;
+}
+
+.demi-drop {
+  box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
+  padding: 15px;
+}
+
+.demi-card {
+  box-shadow: 0 0 2px 2px rgba(0,0,0,0.2);
+  padding: 15px;
+  border-radius: 3px;
+  margin: 8px;
+  border: 1px solid #A1A1A1;
+}
+
+.demi-list {
+  margin: 8px;
+}
+
+.demi-list-item {
+  list-style-type: none;
+  list-style-position: inside;
+  padding: 13px;
+}

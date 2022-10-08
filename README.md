@@ -1,7 +1,9 @@
 # DemiCSS
 Simple and Lightweight CSS Designs
 ```html
-<button class="demi-btn demi-primary">Button</button>
+<button class="demi-btn demi-btn-primary">Button</button>
+<input type="text" value="Input" class="demi-input demi-input-forest">
+<input type="range" class="demi-slider demi-slider-crimson">
 ```
 
 # Installation
